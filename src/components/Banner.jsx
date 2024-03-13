@@ -90,7 +90,8 @@ const Banner = () => {
                     <Carousel autoPlay={true} className='rounded-md' infinite={true} arrows={false} showDots={true} responsive={responsiveCarousel}>
                         {[aa, aaa, as, sa].map((num, index) => (
                             <Link key={index} to='#'>
-                                <img src={`http://localhost:3000/images/banner/${num}.jpg`} alt="" className='object-cover rounded-md' />
+                                {/* <img src={`http://localhost:3000/images/banner/${num}.jpg`} alt="" className='object-cover rounded-md' /> */}
+                                <img src={num} alt="" className='object-cover rounded-md' />
                             </Link>
                         ))}
                     </Carousel>
