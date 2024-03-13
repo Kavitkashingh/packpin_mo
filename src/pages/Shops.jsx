@@ -13,6 +13,7 @@ import ShopProducts from '../components/products/ShopProducts'
 import Pagination from '../components/Pagination'
 import { price_range_product, query_products } from '../store/reducers/homeReducer'
 import { useDispatch, useSelector } from 'react-redux'
+import gif from '../assets/banner/shop.gif'
 
 const Shops = () => {
 
@@ -72,7 +73,7 @@ const Shops = () => {
 
         <div>
             <Headers/>
-            <section className='bg-[url("http://localhost:3000/images/banner/shop.gif")] h-[220px]  bg-cover bg-no-repeat relative bg-left'>
+            <section src={gif} className='h-[220px]  bg-cover bg-no-repeat relative bg-left'>
                 <div className='absolute left-0 top-0 w-full h-full bg-[#2422228a]'>
                     <div className='w-[85%] md:w-[80%] sm:w-[90%] lg:w-[90%] h-full mx-auto'>
                         <div className='flex flex-col justify-center gap-1 items-center h-full w-full text-white'>
