@@ -11,10 +11,10 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Margin } from '@mui/icons-material';
-import aa from '../assets/banner 5.png';
-import aaa from '../assets/banner 8.png';
-import as from '../assets/banner 9.png';
-import sa from '../assets/banner 10.png';
+import aa from '../assets/banner 5.png'
+import aaa from '../assets/banner 8.png'
+import as from '../assets/banner 9.png'
+import sa from '../assets/banner 10.png'
 
 const Banner = () => {
     // const { categories } = useSelector(state => state.home); // Ensure this matches your actual state structure

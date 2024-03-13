@@ -310,7 +310,7 @@ const Headers = ({ handleLoginClick }) => {
                 >
                     <div className="flex justify-start flex-col gap-5">
                         <Link to="/">
-                            <img src="http://localhost:3000/images/logo.png" className="h-[30px]" alt="logo" />
+                            <img src={logo} className="h-[30px]" alt="logo" />
                         </Link>
                         <div className="flex justify-star">
                             <div className="relative  flex justify-center items-center cursor-pointer rounded-lg">
