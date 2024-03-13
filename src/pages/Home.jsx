@@ -23,17 +23,13 @@ const Home = () => {
         <div className='w-full'>
             <Heders />
             <Banner />
-            {/* <div className='my-3'>
-                <Categorys />
-            </div> */}
-
             <div className='py-5'>
                 <FeatureProducts products={products} name='Feature Products' />
             </div>
             <div className='mb-3'>
               <Slidex/>
             </div>
-            <div className='bg-[#d9d9d9] border-none'>
+            <div className='bg-[#d9d9d9] xs:py-0 py-10 border-none'>
                 <Feature/>
                 <FeatureProducts products={products}/>  
             </div>  

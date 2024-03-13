@@ -151,25 +151,24 @@ const Details = () => {
                 <div className='flex gap-3 flex-col my-4  '>
                     <h1 className=''>Choose Colour</h1>
                     <div className=' flex gap-1 flex-grow'>
-                        <span className='h-10 w-10 rounded-full cursor-pointer hover:text-white bg-black text-black hover:shadow-lg  bg-white-500 border-solid border-2  '></span>
-                        <span className='h-10 w-10 rounded-full cursor-pointer hover:text-white bg-white hover:shadow-lg  bg-white-500 text-black border-solid border-2 border-red-300 '></span>
-                        <span className='h-10 w-10 rounded-full cursor-pointer hover:text-whitebg-red-500   bg-[#a98041] text-black border-solid border-2'></span>
+                        <span className='h-8 w-8 rounded-full cursor-pointer hover:text-white bg-black text-black hover:shadow-lg  bg-white-500 border-solid border-2  '></span>
+                        <span className='h-8 w-8 rounded-full cursor-pointer hover:text-white bg-white hover:shadow-lg  bg-white-500 text-black border-solid border-2 border-red-300 '></span>
+                        <span className='h-8 w-8 rounded-full cursor-pointer hover:text-whitebg-red-500   bg-[#a98041] text-black border-solid border-2'></span>
                     </div>
                 </div>    
                 <div className='flex gap-3 flex-col'>
                     <h1 className=''>Choose size</h1>
-
                     <div className=' flex gap-1 flex-grow'>
-                        <span className='px-2 text-[15px] w-[70%] py-2 h-[40px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>8.5x4.5x3.5in</span>
-                        <span className='px-2 text-[15px] w-[70%] py-2 h-[40px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>8.5 x 6.8 x 3.5 in</span>
+                        <span className='px-2 text-[10px] w-[50%] py-[7px] h-[30px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>8.5x4.5x3.5in</span>
+                        <span className='px-2 text-[10px] w-[50%] py-[7px] h-[30px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>8.5 x 6.8 x 3.5 in</span>
                     </div>
                     <div className=' flex gap-1 flex-grow'>
-                        <span className='px-2 text-[15px] w-[70%] py-2 h-[40px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>12 x 6.5 x 4 in</span>
-                        <span className='px-2 text-[15px] w-[70%] py-2 h-[40px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>12 x 6.5 x 4 in</span>
+                        <span className='px-2 text-[10px] w-[50%] py-[7px] h-[30px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>12 x 6.5 x 4 in</span>
+                        <span className='px-2 text-[10px] w-[50%] py-[7px] h-[30px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>12 x 6.5 x 4 in</span>
                     </div>
                     <div className=' flex gap-1 flex-grow'>
-                        <span className='px-2 text-[15px] w-[70%] py-2 h-[40px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>15 x 12.5 x 8 in</span>
-                        <span className='px-2 text-[15px] w-[70%] py-2 h-[40px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>8.5 x 4.5 x 3.5</span>
+                        <span className='px-2 text-[10px] w-[50%] py-[7px] h-[30px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>15 x 12.5 x 8 in</span>
+                        <span className='px-2 text-[10px] w-[50%] py-[7px] h-[30px] cursor-pointer hover:text-white hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 rounded-2xl bg-white-500 text-black border-solid border-2 border-red-500 '>8.5 x 4.5 x 3.5</span>
                     </div>
 
 
@@ -190,7 +189,7 @@ const Details = () => {
                     <h1 className='mt-4'>Quantity</h1>
                     {
                         product.stock ? <>
-                            <div className='flex bg-slate-200 w-[60%] h-[50px] rounded-xl justify-center items-center text-xl border-solid border-2 border-red-500'>
+                            <div className='flex bg-slate-200 w-[50%] h-[30px] rounded-xl justify-center items-center text-xl border-solid border-2 border-red-500'>
                                 <div onClick={dec} className=' cursor-pointer'>-</div>
                                 <div className='px-5'>{quantity}</div>
                                 <div onClick={inc} className=' cursor-pointer'>+</div>

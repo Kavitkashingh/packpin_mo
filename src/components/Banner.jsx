@@ -82,7 +82,6 @@ const Banner = () => {
                     </ul>
                 </div>
             </div>
-
             <div className='w-[80%] xs:mt-[-13px] xs:w-[95%] overflow-hidden mx-auto'>
             {/* ml-[-9px] md:w-3/4 lg:w-4/5 */}
                 {/* Carousel and Slider */}
@@ -96,12 +95,11 @@ const Banner = () => {
                         ))}
                     </Carousel>
                 </div>
-
-                <div className="xs:w-[102%] overflow-hidden pb-2 mt-[-2px]">
+                <div className="xs:w-[102%] overflow-hidden xs:pb-2 mt-[-2px]">
                     <Slider {...settings} className="gap-2" >
                         {[ imga,imga,imga].map((image, index) => (
                             <div key={index} className='' >
-                                <img src={image} alt="Slide" className=' gap-2 overflow-hidden w-[96%] object-cover rounded-md'/>
+                                <img src={image} alt="Slide" className=' gap-2 overflow-hidden xs:w-[96%] w-[99%] object-cover rounded-md'/>
                             </div>
                         ))}
                     </Slider>

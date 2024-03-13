@@ -126,17 +126,17 @@ const FeatureProducts = ({ products }) => {
 
     return (
 
-        <div className='xs:w-[96%] w-[100%] flex flex-wrap  mx-auto overflow-hidden'>
+        <div className='xs:w-[96%] w-[100%] justify-start flex flex-wrap  mx-auto overflow-hidden'>
 
-            <div className='flex ml-2 justify-start flex-col relative xs:text-sm text-slate-600 font-bold xs:pb-3 text-4xl pb-11'>
+            <div className='flex xs:ml-2 ml-[50px] justify-start flex-col relative xs:text-sm text-slate-600 font-bold xs:pb-3 text-4xl pb-11'>
                 <h2>FOOD PACKAGING</h2>
             </div>
 
-            <div className='justify-center xs:gap-0 gap-5 rounded-sm xs:w-full grid grid-cols-5 sm:grid-cols-2 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 md-lg:grid-cols-2 2xl:grid-cols-4'>
+            <div className='justify-center w-[95%] flex-wrap mx-auto xs:gap-2 gap-3 xs:rounded-sm rounded-2xl xs:w-full grid grid-cols-5 sm:grid-cols-2 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 md-lg:grid-cols-2 2xl:grid-cols-4'>
                 {
-                    products.map((p, i) => <div key={i} className='h-[500px] box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; xs:mb-2 w-[319px] xs:ml-1 xs:w-[180px] xs:h-[290px] group border p-2 bg-[#ffffff] rounded-xl group transition-all duration-500 hover:shadow-md '>
+                    products.map((p, i) => <div key={i} className='h-[480px] box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; xs:mb-2 w-[319px] xs:ml-1 xs:w-[180px] xs:h-[300px]  border p-2 bg-[#ffffff] rounded-3xl xs:rounded-xl   group transition-all duration-500 hover:shadow-md '>
                         <div className='relative overflow-hidden'>
-                            <Link to={`/product/details/${p.slug}`}><img className='sm:w-full w-[298px] h-[315px]  xs:w-[164px] rounded-lg xs:h-[175px]' src={p.images[0]} alt="product images" ></img></Link>
+                            <Link to={`/product/details/${p.slug}`}><img className='sm:w-full w-[298px] h-[315px]  xs:w-[164px] xs:rounded-lg rounded-3xl  xs:h-[175px]' src={p.images[0]} alt="product images" ></img></Link>
                             <ul className='flex transition-all duration-700 -bottom-10 justify-center items-center gap-2 absolute w-full group-hover:bottom-3'>
                                 <li onClick={() => add_wishlist(p)} className='w-[38px] h-[38px] cursor-pointer bg-white flex justify-center items-center rounded-full hover:bg-[#7fad39] hover:text-white hover:rotate-[720deg] transition-all'><AiFillHeart /></li>
                                 <Link to={`/product/details/${p.slug}`} className='w-[38px] h-[38px] cursor-pointer bg-white flex justify-center items-center rounded-full hover:bg-[#7fad39] hover:text-white hover:rotate-[720deg] transition-all' ><FaEye /></Link>
@@ -145,19 +145,19 @@ const FeatureProducts = ({ products }) => {
                             </ul>
                         </div>
 
-                        <div className='xs:my-2'>
+                        <div className='xs:my-2 my-4'>
 
-                            <span class='capitalize line-clamp-2 text-[10px] font-lato bg-aquamarine xs:w-[150px] w-72'><span className='capitalize w-[100%] font-bold text-[12px]'>{p.name}</span>  {p.description}</span>
-                            <div className='flex xs:mt-0 xs:mt-1 xs:text-[10px]'>
-                                <span className='mr-2 xs:mt-[-2px] font-lato text-slate-500 text-[8px]'>By:Shop</span>
+                            <span class='capitalize line-clamp-2 text-sm xs:text-[10px] font-lato bg-aquamarine xs:w-[150px] w-72'><span className='capitalize w-[100%] font-bold text-sm  xs:text-[12px]'>{p.name}</span>  {p.description}</span>
+
+                            <div className='flex xs:mt-1 my-2 xs:text-[10px]'>
+                                <span className='mr-2 xs:mt-[-6px] mt-[-3px] font-lato text-slate-500 text-sm xs:text-[10px]'>By:Shop</span>
                                 <Ratings ratings={p.rating}/>
                             </div>
 
-                            <div className='flex mt-2 xs:justify-between' >
-                                <div className='flex flex-col xs:my-1'>
+                            <div className='flex mt-4 xs:mt-0 justify-between' >
+                                <div className='flex mt-[-10px] flex-col'>
                                     {
                                         <span className="text-black xs:text-[12px]  text-[1.62em]   w-[auto] font-bold">₹{p.price - Math.floor((p.price * p.discount) / 100)}</span>
-
                                     }
 
                                     <div className='flex'>
@@ -170,8 +170,8 @@ const FeatureProducts = ({ products }) => {
                                     </div>
 
                                 </div>
-                                <li onClick={() => add_card(p._id)} className='w-[36px] h-[36px] xs:w-[28px] xs:h-[28px]  cursor-pointer text-white bg-red-500  text-bold flex justify-center items-center rounded-full text-black transition-all xs:hidden'><AiOutlineShoppingCart /></li>
-                                <Link onClick={handleOpen}><button className=' xs:h-[30px] xs:mt-1 xs:w-[75px] xs:text-xs  w-[119px] h-[40px] cursor-pointer hover:shadow-lg hover:shadow-red-500/40 bg-red-500 rounded-md text-white'>Buy Now</button> </Link>
+                                <li onClick={() => add_card(p._id)} className='w-[36px] h-[36px] xs:w-[28px] xs:h-[28px] mr-[-40px]  cursor-pointer text-white bg-red-500  text-bold flex justify-center items-center rounded-full  transition-all xs:hidden'><AiOutlineShoppingCart /></li>
+                                <Link onClick={handleOpen}><button className=' xs:h-[30px] xs:mt-1 xs:w-[75px] xs:text-xs  w-[119px] h-[40px] cursor-pointer hover:shadow-lg hover:shadow-red-500/40 bg-red-500 xs:rounded-md rounded-full text-white'>Buy Now</button> </Link>
                             </div>
 
                         </div>
